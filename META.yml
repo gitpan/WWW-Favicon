@@ -2,7 +2,6 @@
 abstract: perl module to detect favicon url
 author: Daisuke Murase <typester@cpan.org>
 build_requires: 
-  Test::Base: 0
   Test::MockObject::Extends: 0
   Test::More: 0
 distribution_type: module
@@ -22,4 +21,4 @@ requires:
   HTML::ResolveLink: 0
   HTML::TreeBuilder: 0
   LWP::UserAgent: 0
-version: 0.01
+version: 0.02
