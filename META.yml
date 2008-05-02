@@ -21,4 +21,4 @@ requires:
   HTML::ResolveLink: 0
   HTML::TreeBuilder: 0
   LWP::UserAgent: 0
-version: 0.02
+version: 0.03
