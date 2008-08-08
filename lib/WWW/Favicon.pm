@@ -8,7 +8,7 @@ use LWP::UserAgent;
 use HTML::TreeBuilder;
 use HTML::ResolveLink;
 
-our $VERSION = '0.03';
+our $VERSION = '0.03001';
 our @EXPORT_OK = qw/detect_favicon_url/;
 
 __PACKAGE__->mk_accessors(qw/ua/);
@@ -19,6 +19,7 @@ sub new {
     $self->{ua} = do {
         my $ua = LWP::UserAgent->new;
         $ua->timeout(10);
+        $ua->max_size(1024*1024);
         $ua->env_proxy;
         $ua;
     };
